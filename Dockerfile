@@ -27,6 +27,8 @@ RUN apt-get update && apt-get install -y libxml2-dev && rm -f /var/cache/apt/arc
 RUN apt-get update && apt-get install -y libkrb5-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
 RUN apt-get update && apt-get install -y libgsl0-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
 RUN apt-get update && apt-get install -y libqt4-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
+RUN apt-get update && apt-get install -y wget && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
+RUN apt-get update && apt-get install -y cmake && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
 
 RUN wget https://root.cern.ch/download/root_v6.06.02.source.tar.gz && \
     tar zxvf root_v6.06.02.source.tar.gz && \
