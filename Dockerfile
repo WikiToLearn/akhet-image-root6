@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y libglew1.5-dev && rm -f /var/cache/apt/
 RUN apt-get update && apt-get install -y libftgl-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
 RUN apt-get update && apt-get install -y libmysqlclient-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
 RUN apt-get update && apt-get install -y libfftw3-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
-RUN apt-get update && apt-get install -y cfitsio-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
+RUN apt-get update && apt-get install -y libcfitsio-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
 RUN apt-get update && apt-get install -y graphviz-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
 RUN apt-get update && apt-get install -y libavahi-compat-libdnssd-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
 RUN apt-get update && apt-get install -y libldap2-dev && rm -f /var/cache/apt/archives/*deb && find /var/lib/apt/lists/ -type f -delete && find /var/log/ -type f -delete
