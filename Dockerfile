@@ -36,7 +36,7 @@ RUN wget https://root.cern.ch/download/root_v6.06.02.source.tar.gz && \
     cmake -DPYTHON_EXECUTABLE=/usr/bin/python2.7 \
         -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 \
         -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython2.7.so \
-        -DCMAKE_INSTALL_PREFIX=/home/dario/software/root-install \
+        -DCMAKE_INSTALL_PREFIX=/opt/root-install \
         ../root-6.06.02/ && \
     make -j 10 && make install && \
     rm -rf /root-build && rm -rf /root-6.06.02
