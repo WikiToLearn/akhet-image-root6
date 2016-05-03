@@ -38,6 +38,6 @@ RUN wget https://root.cern.ch/download/root_v6.06.02.source.tar.gz && \
         -DPYTHON_LIBRARY=/usr/lib/libpython2.7.so \
         -DCMAKE_INSTALL_PREFIX=/home/dario/software/root-install \
         ../root-6.06.02/ && \
-    make -j 15 && make install && \
+    make -j 10 && make install && \
     rm -rf /root-build && rm -rf /root-6.06.02
 RUN echo source /opt/root-install/bin/thisroot.sh  >> /etc/bash.bashrc
